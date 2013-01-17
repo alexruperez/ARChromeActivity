@@ -7,7 +7,7 @@
 
 Typical usage will look something like this:
 
-	NSURL *urlToShare = [NSURL URLWithString:@"http://alextrob.net/"];
+	NSURL *urlToShare = [NSURL URLWithString:@"http://github.com/alexruperez"];
 	NSArray *activityItems = [NSArray arrayWithObject:urlToShare];
 
 	ARChromeActivity *chromeActivity = [[ARChromeActivity alloc] init];
