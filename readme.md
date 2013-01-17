@@ -18,10 +18,10 @@ _(See example Xcode project)_
 
 Simply `alloc`/`init` an instance of `ARChromeActivity` and pass that object into the applicationActivities array when creating a `UIActivityViewController`.
 
-    ```NSURL *URL = [NSURL URLWithString:@"http://github.com/alexruperez"];
+    NSURL *URL = [NSURL URLWithString:@"http://github.com/alexruperez"];
     ARChromeActivity *activity = [[ARChromeActivity alloc] init];
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities:@[activity]];
-    [self presentViewController:activityViewController animated:YES completion:nil];```
+    [self presentViewController:activityViewController animated:YES completion:nil];
 
 Note that you can include the activity in any UIActivityViewController and it will only be shown to the user if there is a URL in the activity items.
 
