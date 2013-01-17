@@ -1,7 +1,7 @@
 # ARChromeActivity
 
 #### A UIActivity subclass for opening URLs in Google Chrome.
-#### Forked by Alex Rupérez who adds multilingual support and other internal improvements. 
+#### Forked by Alex Rupérez who adds i18n multilingual support and other internal improvements. 
 
 ## Usage
 
@@ -18,6 +18,7 @@ Typical usage will look something like this:
 
 	[self presentViewController:activityVC animated:YES completion:nil];
 
+Highly recommended usage with [RDActivityViewController](https://github.com/rdougan/RDActivityViewController)!
 
 Have a look at the demo app to see it in context.
 
