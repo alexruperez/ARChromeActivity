@@ -1,6 +1,7 @@
 # ARChromeActivity
 
 #### A UIActivity subclass for opening URLs in Google Chrome.
+#### Forked by Alex Rupérez who adds multilingual support and other internal improvements. 
 
 ## Usage
 

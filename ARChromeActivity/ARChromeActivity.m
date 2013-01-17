@@ -8,7 +8,10 @@
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
+
+	Forked by Alex Rupérez who adds multilingual support and other internal improvements.
+
+*/
 
 
 #import "ARChromeActivity.h"
@@ -17,24 +20,39 @@
 	NSURL *_activityURL;
 }
 
+- (NSString *)activityType
+{
+	return NSStringFromClass([self class]);
+}
+
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:@"ARChromeActivity"];
+  return [UIImage imageNamed:NSStringFromClass([self class])];
 }
 
 - (NSString *)activityTitle {
-    return @"Open in Chrome";
+  return NSLocalizedStringFromTable(@"Open in Chrome", NSStringFromClass([self class]), nil);
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
-	return [[activityItems lastObject] isKindOfClass:[NSURL class]] && [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"googlechrome://"]];
+    for (id activityItem in activityItems) {
+		if ([activityItem isKindOfClass:[NSURL class]] && [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"googlechrome://"]]) {
+			return YES;
+		}
+	}
+	
+	return NO;
 }
 
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
-	_activityURL = [activityItems lastObject];
+    for (id activityItem in activityItems) {
+		if ([activityItem isKindOfClass:[NSURL class]]) {
+			_activityURL = activityItem;
+		}
+	}
 }
 
 - (void)performActivity {
-	
+  bool completed = NO;
 	NSURL *inputURL = _activityURL;
 	NSString *scheme = inputURL.scheme;
 	
@@ -57,10 +75,10 @@
 		NSURL *chromeURL = [NSURL URLWithString:chromeURLString];
 		
 		// Open the URL with Chrome.
-		[[UIApplication sharedApplication] openURL:chromeURL];
-		
-		[self activityDidFinish:YES];
+		completed = [[UIApplication sharedApplication] openURL:chromeURL];
 	}
+    
+    [self activityDidFinish:completed];
 }
 
 @end
