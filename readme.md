@@ -1,25 +1,25 @@
 # ARChromeActivity
 
-#### A UIActivity subclass for opening URLs in Google Chrome.
+#### ARChromeActivity is a UIActivity subclass that provides an "Open in Chrome" action to a UIActivityViewController.
 #### Forked by Alex Rupérez who adds i18n multilingual support and other internal improvements. 
 
+![Demo screenshot](https://raw.github.com/alexruperez/ARChromeActivity/master/screenshot.png)
+
+## Requirements
+- As UIActivity is iOS 6 only, so is the subclass.
+- This project uses ARC. If you want to use it in a non ARC project, you must add the -fobjc-arc compiler flag to TUSafariActivity.m in Target Settings > Build Phases > Compile Sources.
+
+## Installation
+Add the ARChromeActivity subfolder to your project. There are no required libraries other than UIKit.
+
 ## Usage
+_(See example Xcode project)_
 
-Typical usage will look something like this:
+Simply alloc/init an instance of ARChromeActivity and pass that object into the applicationActivities array when creating a UIActivityViewController.
 
-	NSURL *urlToShare = [NSURL URLWithString:@"http://github.com/alexruperez"];
-	NSArray *activityItems = [NSArray arrayWithObject:urlToShare];
+  NSURL *URL = [NSURL URLWithString:@"http://github.com/alexruperez"];
+  ARChromeActivity *activity = [[ARChromeActivity alloc] init];
+  UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[URL] applicationActivities:@[activity]];
+  [self presentViewController:activityViewController animated:YES completion:nil];
 
-	ARChromeActivity *chromeActivity = [[ARChromeActivity alloc] init];
-	NSArray *applicationActivities = [NSArray arrayWithObject:chromeActivity];
-
-	UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems
-																			 applicationActivities:applicationActivities];
-
-	[self presentViewController:activityVC animated:YES completion:nil];
-
-Highly recommended usage with [RDActivityViewController](https://github.com/rdougan/RDActivityViewController)!
-
-Have a look at the demo app to see it in context.
-
-![Demo screenshot](https://raw.github.com/alextrob/ARChromeActivity/master/screenshot.png)
+Highly recommended usage with [RDActivityViewController](https://github.com/rdougan/RDActivityViewController).
