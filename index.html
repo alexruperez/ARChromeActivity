@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="ARChromeActivity : A UIActivity subclass that opens URLs in Google Chrome" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>ARChromeActivity</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alexruperez/ARChromeActivity">View on GitHub</a>
+
+          <h1 id="project_title">ARChromeActivity</h1>
+          <h2 id="project_tagline">A UIActivity subclass that opens URLs in Google Chrome</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alexruperez/ARChromeActivity/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alexruperez/ARChromeActivity/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>ARChromeActivity</h1>
+
+<p><code>ARChromeActivity</code> is a <code>UIActivity</code> subclass that provides an "Open in Chrome" action to a <code>UIActivityViewController</code>.</p>
+
+<p>Forked by Alex Rupérez who adds i18n multilingual support and other internal improvements. </p>
+
+<p><img src="https://raw.github.com/alexruperez/ARChromeActivity/master/screenshot.png" alt="ARChromeActivity screenshot" title="ARChromeActivity screenshot"></p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>As <code>UIActivity</code> is iOS 6 only, so is the subclass.</li>
+<li>This project uses ARC. If you want to use it in a non ARC project, you must add the <code>-fobjc-arc</code> compiler flag to ARChromeActivity.m in Target Settings &gt; Build Phases &gt; Compile Sources.</li>
+</ul><h2>Installation</h2>
+
+<p>Add the <code>ARChromeActivity</code> subfolder to your project. There are no required libraries other than <code>UIKit</code>.</p>
+
+<h2>Usage</h2>
+
+<p><em>(See example Xcode project)</em></p>
+
+<p>Simply <code>alloc</code>/<code>init</code> an instance of <code>ARChromeActivity</code> and pass that object into the applicationActivities array when creating a <code>UIActivityViewController</code>.</p>
+
+<div class="highlight"><pre><span class="n">NSURL</span> <span class="o">*</span><span class="n">URL</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="n">URLWithString</span><span class="o">:</span><span class="s">@"http://github.com/alexruperez"</span><span class="p">];</span>
+<span class="n">ARChromeActivity</span> <span class="o">*</span><span class="n">activity</span> <span class="o">=</span> <span class="p">[[</span><span class="n">ARChromeActivity</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+<span class="n">UIActivityViewController</span> <span class="o">*</span><span class="n">activityViewController</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIActivityViewController</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithActivityItems</span><span class="o">:</span><span class="err">@</span><span class="p">[</span><span class="n">URL</span><span class="p">]</span> <span class="n">applicationActivities</span><span class="o">:</span><span class="err">@</span><span class="p">[</span><span class="n">activity</span><span class="p">]];</span>
+<span class="p">[</span><span class="n">self</span> <span class="n">presentViewController</span><span class="o">:</span><span class="n">activityViewController</span> <span class="n">animated</span><span class="o">:</span><span class="nb">YES</span> <span class="n">completion</span><span class="o">:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+
+<p>Note that you can include the activity in any UIActivityViewController and it will only be shown to the user if there is a URL in the activity items.</p>
+
+<p>Highly recommended usage with <a href="https://github.com/rdougan/RDActivityViewController">RDActivityViewController</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ARChromeActivity maintained by <a href="https://github.com/alexruperez">alexruperez</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
