@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5ACDD8B1861915D00090F31 /* ARChromeActivity-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDD891861915D00090F31 /* ARChromeActivity-iPad.png */; };
+		D5ACDD8C1861915D00090F31 /* ARChromeActivity-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDD8A1861915D00090F31 /* ARChromeActivity-iPad@2x.png */; };
+		D5ACDD8F1861919F00090F31 /* ARChromeActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDD8D1861919F00090F31 /* ARChromeActivity.strings */; };
 		FA9861A8163185A100F1BC17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9861A7163185A100F1BC17 /* UIKit.framework */; };
 		FA9861AA163185A100F1BC17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9861A9163185A100F1BC17 /* Foundation.framework */; };
 		FA9861AC163185A100F1BC17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9861AB163185A100F1BC17 /* CoreGraphics.framework */; };
@@ -17,14 +20,31 @@
 		FA9861BC163185A100F1BC17 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9861BB163185A100F1BC17 /* Default@2x.png */; };
 		FA9861BE163185A100F1BC17 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9861BD163185A100F1BC17 /* Default-568h@2x.png */; };
 		FA9861CB163185EF00F1BC17 /* ARChromeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9861C6163185EF00F1BC17 /* ARChromeActivity.m */; };
-		FA9861CC163185EF00F1BC17 /* ARChromeActivity~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9861C7163185EF00F1BC17 /* ARChromeActivity~ipad.png */; };
-		FA9861CD163185EF00F1BC17 /* ARChromeActivity@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9861C8163185EF00F1BC17 /* ARChromeActivity@2x~ipad.png */; };
-		FA9861CE163185EF00F1BC17 /* ARChromeActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9861C9163185EF00F1BC17 /* ARChromeActivity.png */; };
 		FA9861CF163185EF00F1BC17 /* ARChromeActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9861CA163185EF00F1BC17 /* ARChromeActivity@2x.png */; };
 		FA9861D2163186CE00F1BC17 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9861D1163186CE00F1BC17 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5ACDD891861915D00090F31 /* ARChromeActivity-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity-iPad.png"; sourceTree = "<group>"; };
+		D5ACDD8A1861915D00090F31 /* ARChromeActivity-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity-iPad@2x.png"; sourceTree = "<group>"; };
+		D5ACDD8E1861919F00090F31 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD90186191AF00090F31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD91186191C000090F31 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD92186191CA00090F31 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/ARChromeActivity.strings"; sourceTree = "<group>"; };
+		D5ACDD93186191D800090F31 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD94186191E100090F31 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD95186191EC00090F31 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD96186191FF00090F31 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD971861920900090F31 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD981861921600090F31 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD991861922F00090F31 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD9A1861927C00090F31 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD9B1861928800090F31 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD9C1861929400090F31 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD9D186192A300090F31 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDD9E186192B000090F31 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ARChromeActivity.strings"; sourceTree = "<group>"; };
+		D5ACDD9F1861933E00090F31 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
+		D5ACDDA41861935700090F31 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ARChromeActivity.strings"; sourceTree = "<group>"; };
 		FA9861A3163185A100F1BC17 /* ChromeActivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromeActivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9861A7163185A100F1BC17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA9861A9163185A100F1BC17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,9 +60,6 @@
 		FA9861BD163185A100F1BC17 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FA9861C5163185EF00F1BC17 /* ARChromeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARChromeActivity.h; sourceTree = "<group>"; };
 		FA9861C6163185EF00F1BC17 /* ARChromeActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARChromeActivity.m; sourceTree = "<group>"; };
-		FA9861C7163185EF00F1BC17 /* ARChromeActivity~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity~ipad.png"; sourceTree = "<group>"; };
-		FA9861C8163185EF00F1BC17 /* ARChromeActivity@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity@2x~ipad.png"; sourceTree = "<group>"; };
-		FA9861C9163185EF00F1BC17 /* ARChromeActivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARChromeActivity.png; sourceTree = "<group>"; };
 		FA9861CA163185EF00F1BC17 /* ARChromeActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity@2x.png"; sourceTree = "<group>"; };
 		FA9861D0163186CE00F1BC17 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FA9861D1163186CE00F1BC17 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -119,12 +136,12 @@
 		FA9861C4163185EF00F1BC17 /* ARChromeActivity */ = {
 			isa = PBXGroup;
 			children = (
+				D5ACDD8D1861919F00090F31 /* ARChromeActivity.strings */,
 				FA9861C5163185EF00F1BC17 /* ARChromeActivity.h */,
 				FA9861C6163185EF00F1BC17 /* ARChromeActivity.m */,
-				FA9861C9163185EF00F1BC17 /* ARChromeActivity.png */,
 				FA9861CA163185EF00F1BC17 /* ARChromeActivity@2x.png */,
-				FA9861C8163185EF00F1BC17 /* ARChromeActivity@2x~ipad.png */,
-				FA9861C7163185EF00F1BC17 /* ARChromeActivity~ipad.png */,
+				D5ACDD891861915D00090F31 /* ARChromeActivity-iPad.png */,
+				D5ACDD8A1861915D00090F31 /* ARChromeActivity-iPad@2x.png */,
 			);
 			path = ARChromeActivity;
 			sourceTree = SOURCE_ROOT;
@@ -164,6 +181,23 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				cs,
+				de,
+				"es-ES",
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				nb,
+				nl,
+				ru,
+				sk,
+				sv,
+				vi,
+				"zh-Hans",
+				da,
+				"zh-Hant",
 			);
 			mainGroup = FA986198163185A100F1BC17;
 			productRefGroup = FA9861A4163185A100F1BC17 /* Products */;
@@ -181,13 +215,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9861B2163185A100F1BC17 /* InfoPlist.strings in Resources */,
+				D5ACDD8C1861915D00090F31 /* ARChromeActivity-iPad@2x.png in Resources */,
 				FA9861BA163185A100F1BC17 /* Default.png in Resources */,
 				FA9861BC163185A100F1BC17 /* Default@2x.png in Resources */,
 				FA9861BE163185A100F1BC17 /* Default-568h@2x.png in Resources */,
-				FA9861CC163185EF00F1BC17 /* ARChromeActivity~ipad.png in Resources */,
-				FA9861CD163185EF00F1BC17 /* ARChromeActivity@2x~ipad.png in Resources */,
-				FA9861CE163185EF00F1BC17 /* ARChromeActivity.png in Resources */,
 				FA9861CF163185EF00F1BC17 /* ARChromeActivity@2x.png in Resources */,
+				D5ACDD8F1861919F00090F31 /* ARChromeActivity.strings in Resources */,
+				D5ACDD8B1861915D00090F31 /* ARChromeActivity-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +242,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D5ACDD8D1861919F00090F31 /* ARChromeActivity.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5ACDD8E1861919F00090F31 /* cs */,
+				D5ACDD90186191AF00090F31 /* en */,
+				D5ACDD91186191C000090F31 /* de */,
+				D5ACDD92186191CA00090F31 /* es-ES */,
+				D5ACDD93186191D800090F31 /* es */,
+				D5ACDD94186191E100090F31 /* fr */,
+				D5ACDD95186191EC00090F31 /* it */,
+				D5ACDD96186191FF00090F31 /* ja */,
+				D5ACDD971861920900090F31 /* ko */,
+				D5ACDD981861921600090F31 /* nb */,
+				D5ACDD991861922F00090F31 /* nl */,
+				D5ACDD9A1861927C00090F31 /* ru */,
+				D5ACDD9B1861928800090F31 /* sk */,
+				D5ACDD9C1861929400090F31 /* sv */,
+				D5ACDD9D186192A300090F31 /* vi */,
+				D5ACDD9E186192B000090F31 /* zh-Hans */,
+				D5ACDD9F1861933E00090F31 /* da */,
+				D5ACDDA41861935700090F31 /* zh-Hant */,
+			);
+			name = ARChromeActivity.strings;
+			sourceTree = "<group>";
+		};
 		FA9861B0163185A100F1BC17 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

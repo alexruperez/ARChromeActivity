@@ -2,8 +2,8 @@
 //  main.m
 //  ChromeActivityDemo
 //
-//  Created by Alex Robinson on 19/10/12.
-//  Copyright (c) 2012 Alex Robinson. All rights reserved.
+//  Created by Alex Ruperez on 19/10/13.
+//  Copyright (c) 2013 Alex Ruperez. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
