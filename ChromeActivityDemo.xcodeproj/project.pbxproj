@@ -25,13 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D51C2C531861CCBA00255FA3 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/ARChromeActivity.strings"; sourceTree = "<group>"; };
+		D51C2C541861CCC200255FA3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
 		D5ACDD891861915D00090F31 /* ARChromeActivity-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity-iPad.png"; sourceTree = "<group>"; };
 		D5ACDD8A1861915D00090F31 /* ARChromeActivity-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARChromeActivity-iPad@2x.png"; sourceTree = "<group>"; };
 		D5ACDD8E1861919F00090F31 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
 		D5ACDD90186191AF00090F31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
 		D5ACDD91186191C000090F31 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
-		D5ACDD92186191CA00090F31 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/ARChromeActivity.strings"; sourceTree = "<group>"; };
-		D5ACDD93186191D800090F31 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
 		D5ACDD94186191E100090F31 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
 		D5ACDD95186191EC00090F31 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
 		D5ACDD96186191FF00090F31 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ARChromeActivity.strings; sourceTree = "<group>"; };
@@ -172,8 +172,9 @@
 		FA98619A163185A100F1BC17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AR;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Alex Robinson";
+				ORGANIZATIONNAME = "Alex Rupérez";
 			};
 			buildConfigurationList = FA98619D163185A100F1BC17 /* Build configuration list for PBXProject "ChromeActivityDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -248,8 +249,6 @@
 				D5ACDD8E1861919F00090F31 /* cs */,
 				D5ACDD90186191AF00090F31 /* en */,
 				D5ACDD91186191C000090F31 /* de */,
-				D5ACDD92186191CA00090F31 /* es-ES */,
-				D5ACDD93186191D800090F31 /* es */,
 				D5ACDD94186191E100090F31 /* fr */,
 				D5ACDD95186191EC00090F31 /* it */,
 				D5ACDD96186191FF00090F31 /* ja */,
@@ -263,6 +262,8 @@
 				D5ACDD9E186192B000090F31 /* zh-Hans */,
 				D5ACDD9F1861933E00090F31 /* da */,
 				D5ACDDA41861935700090F31 /* zh-Hant */,
+				D51C2C531861CCBA00255FA3 /* es-ES */,
+				D51C2C541861CCC200255FA3 /* es */,
 			);
 			name = ARChromeActivity.strings;
 			sourceTree = "<group>";
